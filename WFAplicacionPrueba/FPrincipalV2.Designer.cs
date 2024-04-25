@@ -1,6 +1,6 @@
 ﻿namespace WFAplicacionPrueba
 {
-    partial class FPrincipal
+    partial class FPrincipalV2
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -46,7 +46,7 @@
             this.BVisible.TabIndex = 0;
             this.BVisible.Text = "Ver";
             this.BVisible.UseVisualStyleBackColor = true;
-            this.BVisible.Click += new System.EventHandler(this.bVisible);
+            this.BVisible.Click += new System.EventHandler(this.Botones_Click);
             // 
             // BotonSoloLectura
             // 
@@ -57,7 +57,7 @@
             this.BotonSoloLectura.TabIndex = 1;
             this.BotonSoloLectura.Text = "Solo Lectura";
             this.BotonSoloLectura.UseVisualStyleBackColor = true;
-            this.BotonSoloLectura.Click += new System.EventHandler(this.BotonSoloLectura_Cick);
+            this.BotonSoloLectura.Click += new System.EventHandler(this.bActivar_Click);
             // 
             // BotonActivar
             // 
@@ -67,7 +67,7 @@
             this.BotonActivar.TabIndex = 2;
             this.BotonActivar.Text = "Activar";
             this.BotonActivar.UseVisualStyleBackColor = true;
-            this.BotonActivar.Click += new System.EventHandler(this.bActivar_Click);
+            this.BotonActivar.Click += new System.EventHandler(this.Botones_Click);
             // 
             // bTransferir
             // 
@@ -77,7 +77,7 @@
             this.bTransferir.TabIndex = 3;
             this.bTransferir.Text = "Transferir";
             this.bTransferir.UseVisualStyleBackColor = true;
-            this.bTransferir.Click += new System.EventHandler(this.bTransferir_Click);
+            this.bTransferir.Click += new System.EventHandler(this.Botones_Click);
             // 
             // lEntrada
             // 
@@ -114,7 +114,7 @@
             this.lSalida.TabIndex = 6;
             this.lSalida.Text = "Texto Salida";
             // 
-            // fPrincipal
+            // FPrincipalV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.BotonActivar);
             this.Controls.Add(this.BotonSoloLectura);
             this.Controls.Add(this.BVisible);
-            this.Name = "fPrincipal";
+            this.Name = "FPrincipalV2";
             this.Text = "Windows Forms Mi Aplicacion de Prueba";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

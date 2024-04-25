@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FPrincipalV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPrincipalV2.Designer.cs">
+      <DependentUpon>FPrincipalV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FPrincipalV2.resx">
+      <DependentUpon>FPrincipalV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FPrincipal.resx">
       <DependentUpon>FPrincipal.cs</DependentUpon>
     </EmbeddedResource>

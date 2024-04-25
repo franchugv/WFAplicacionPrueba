@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WFAplicacionPrueba
 {
-    public partial class fPrincipal : Form
+    public partial class FPrincipal : Form
     {
-        public fPrincipal()
+        public FPrincipal()
         {
             InitializeComponent();
         }
