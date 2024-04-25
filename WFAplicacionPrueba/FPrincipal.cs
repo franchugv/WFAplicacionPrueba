@@ -22,9 +22,22 @@ namespace WFAplicacionPrueba
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bVisible(object sender, EventArgs e)
         {
-            
+            if (TextBoxEntrada.Visible)
+            {
+                // Ocultar la Entrada
+                TextBoxEntrada.Hide();
+                // Cambiar titulo
+                BVisible.Text = "Ver";
+            }
+
+            else
+            {
+                TextBoxEntrada.Visible = true;
+                BVisible.Text = "Ocultar";
+
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,5 +65,22 @@ namespace WFAplicacionPrueba
             
 
         }
+
+        private void BotonSoloLectura_Cick(object sender, EventArgs e)
+        {
+            if (TextBoxEntrada.ReadOnly) /// Modo solo Lectura
+            { 
+                TextBoxEntrada.ReadOnly = false;
+                BotonSoloLectura.Text = "Desactivar Modo Lectura";
+            }
+            else   // Modo Edición
+            {
+                TextBoxEntrada.ReadOnly = true;
+                BotonSoloLectura.Text = "Activar Modo Lectura";
+            }
+
+
+        }
+        
     }
 }

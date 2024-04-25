@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.BVisible = new System.Windows.Forms.Button();
-            this.bEdicion = new System.Windows.Forms.Button();
+            this.BotonSoloLectura = new System.Windows.Forms.Button();
             this.BotonActivar = new System.Windows.Forms.Button();
             this.bTransferir = new System.Windows.Forms.Button();
             this.lEntrada = new System.Windows.Forms.Label();
@@ -46,22 +46,23 @@
             this.BVisible.TabIndex = 0;
             this.BVisible.Text = "Ver";
             this.BVisible.UseVisualStyleBackColor = true;
-            this.BVisible.Click += new System.EventHandler(this.button1_Click);
+            this.BVisible.Click += new System.EventHandler(this.bVisible);
             // 
-            // bEdicion
+            // BotonSoloLectura
             // 
-            this.bEdicion.Location = new System.Drawing.Point(437, 54);
-            this.bEdicion.Name = "bEdicion";
-            this.bEdicion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bEdicion.Size = new System.Drawing.Size(151, 23);
-            this.bEdicion.TabIndex = 1;
-            this.bEdicion.Text = "Solo Lectura";
-            this.bEdicion.UseVisualStyleBackColor = true;
+            this.BotonSoloLectura.Location = new System.Drawing.Point(437, 54);
+            this.BotonSoloLectura.Name = "BotonSoloLectura";
+            this.BotonSoloLectura.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BotonSoloLectura.Size = new System.Drawing.Size(151, 23);
+            this.BotonSoloLectura.TabIndex = 1;
+            this.BotonSoloLectura.Text = "Solo Lectura";
+            this.BotonSoloLectura.UseVisualStyleBackColor = true;
+            this.BotonSoloLectura.Click += new System.EventHandler(this.BotonSoloLectura_Cick);
             // 
-            // bActivar
+            // BotonActivar
             // 
             this.BotonActivar.Location = new System.Drawing.Point(31, 54);
-            this.BotonActivar.Name = "bActivar";
+            this.BotonActivar.Name = "BotonActivar";
             this.BotonActivar.Size = new System.Drawing.Size(151, 23);
             this.BotonActivar.TabIndex = 2;
             this.BotonActivar.Text = "Activar";
@@ -88,11 +89,11 @@
             this.lEntrada.Text = "Texto Entrada";
             this.lEntrada.Click += new System.EventHandler(this.label1_Click);
             // 
-            // tdEntrada
+            // TextBoxEntrada
             // 
             this.TextBoxEntrada.Enabled = false;
             this.TextBoxEntrada.Location = new System.Drawing.Point(142, 126);
-            this.TextBoxEntrada.Name = "tdEntrada";
+            this.TextBoxEntrada.Name = "TextBoxEntrada";
             this.TextBoxEntrada.Size = new System.Drawing.Size(593, 20);
             this.TextBoxEntrada.TabIndex = 5;
             // 
@@ -117,6 +118,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::WFAplicacionPrueba.Properties.Resources.images;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tdSalida);
             this.Controls.Add(this.lSalida);
@@ -124,7 +127,7 @@
             this.Controls.Add(this.lEntrada);
             this.Controls.Add(this.bTransferir);
             this.Controls.Add(this.BotonActivar);
-            this.Controls.Add(this.bEdicion);
+            this.Controls.Add(this.BotonSoloLectura);
             this.Controls.Add(this.BVisible);
             this.Name = "fPrincipal";
             this.Text = "Windows Forms Mi Aplicacion de Prueba";
@@ -139,7 +142,7 @@
         // Miembros Privados de la Clase Forms
 
         private System.Windows.Forms.Button BVisible;
-        private System.Windows.Forms.Button bEdicion;
+        private System.Windows.Forms.Button BotonSoloLectura;
         private System.Windows.Forms.Button BotonActivar;
         private System.Windows.Forms.Button bTransferir;
         private System.Windows.Forms.Label lEntrada;
